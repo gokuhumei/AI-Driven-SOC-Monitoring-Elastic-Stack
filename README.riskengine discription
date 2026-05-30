@@ -1,0 +1,36 @@
+# Risk Engine – User Behavior Analytics & Anomaly Detection
+
+This Python-based Risk Engine is a core component of the AI-Driven SOC Monitoring project. It connects to Elasticsearch and analyzes Windows Event Logs collected through Winlogbeat to identify potentially suspicious user activity.
+
+The engine monitors security-relevant events such as failed login attempts, successful logins, network connections, and process creation events. Using a weighted risk-scoring model, it calculates a risk score for each user based on their activity patterns.
+
+To improve threat detection, the system establishes a behavioral baseline using statistical analysis and identifies deviations from normal user behavior. Users exceeding predefined thresholds are flagged as anomalous and assigned a corresponding threat level (Low, Medium, or High).
+
+### Key Features
+
+* Real-time log analysis from Elasticsearch
+* User risk scoring based on security events
+* Behavioral baseline generation using statistical metrics
+* Anomaly detection through baseline deviation analysis
+* Threat classification (Low, Medium, High)
+* Automated indexing of risk assessments into Elasticsearch
+* Integration with Kibana dashboards for SOC visibility
+
+### Security Events Monitored
+
+* Event ID 4625 – Failed Logins
+* Event ID 4624 – Successful Logins
+* Network Connection Events
+* Process Creation Events
+
+### Technologies Used
+
+* Python
+* Elasticsearch
+* Winlogbeat
+* Kibana
+* Windows Event Logs
+* User Behavior Analytics (UBA)
+* Statistical Anomaly Detection
+
+This module enhances SOC monitoring capabilities by providing automated user behavior analysis, risk assessment, and early detection of potentially malicious activities.
