@@ -32,7 +32,7 @@ Windows Event Logs → Winlogbeat → Elasticsearch → Python Risk Engine → u
 
 ### Full Dashboard Overview
 
-![Dashboard Overview](screenshots/Dasboard-overview.png)
+![Dashboard Overview](screenshots/Dashboard-overview.png)
 
 Complete SOC dashboard displaying risk scores, anomaly detection results, threat classifications, failed login activity, network activity, and process execution metrics.
 
